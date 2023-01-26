@@ -77,7 +77,8 @@
         <q-card-section class="q-pt-none">
           <p><strong>Wat maakt deze pagina anders?</strong></p>
           <ul>
-            <li>Laagdrempelig formulier voor Operatie Klimaat: commitment om actief te worden is optioneel.</li>
+            <li>Laagdrempelig formulier voor Operatie Klimaat: commitment om actief te worden is optioneel. </li>
+            <li><i>Tip: vul je email adres in om te zien wat er dan gebeurt!</i> De andere velden worden eerst verborgen, om het formulier laagdrempeliger er uit te laten zien en meer ruimte op de pagina te geven aan andere handelingsperspectieven.</li>
             <li>Meer informatie over wat Operatie Klimaat is, op wat voor manieren je kan bijdragen en hoe je actief kunnen worden. En gebruik maken van emotie: video in plaats van afbeelding.</li>
             <li>Duidelijke primaire, secundaire en tertiraire acties, in plaats van gelijkwaardige aandacht voor alle handlingsperspectieven. Er ligt een focus op hoogwaardige conversies (kwaliteit van contactgegevens in plaats van kwantiteit).</li>
             <li>Geschreven vanuit perspectief van de lezer. Bijv. 'Fair Future Generators' zegt de gemiddelde bezoeker niks, 'traineeship voor jongeren' is duidelijk.</li>
