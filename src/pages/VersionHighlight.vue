@@ -1,9 +1,9 @@
 <template>
   <div class="bg-accent q-py-lg">
     <div class="max-width">
-      <div class="q-gutter-y-md">
+      <div class="q-gutter-y-md q-pt-sm">
 
-        <q-img :ratio="21/9" class="bg-grey " src="~assets/video.jpg">
+        <q-img :ratio="21/9" class="bg-grey " src="~assets/video.jpg" no-transition no-spinner>
             <div>
               <span>Video</span>
             </div>
@@ -17,12 +17,15 @@
   </div>
 
   <MeerManieren/>
+  <NogMeer/>
 </template>
 <script>
 import MeerManieren from "components/MeerManieren.vue"
+import NogMeer from "components/NogMeer.vue"
 export default {
   components: {
-    MeerManieren
+    MeerManieren,
+    NogMeer
   }
 }
 </script>

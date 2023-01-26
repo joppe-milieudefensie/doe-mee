@@ -27,7 +27,15 @@
         <q-item-label
           header
         >
-          Essential Links
+          Uitleg
+        </q-item-label>
+        <EssentialLink
+          v-bind="{title: 'README!', icon: 'home', link: '/'}"
+        />
+        <q-item-label
+          header
+        >
+          Concept versies:
         </q-item-label>
 
         <EssentialLink
@@ -50,16 +58,22 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
   {
-    title: 'Versie 1',
-    link: '/1'
+    title: 'Laagdrempelig formulier OK',
+    caption: 'Formulier voor Operatie Klimaat op Doe Mee pagina zelf.',
+    link: '/1',
+    icon: 'email',
   },
   {
-    title: 'Versie 2',
-    link: '/2'
+    title: 'OK uitgelicht',
+    caption: 'Operatie Klimaat krijgt iets meer aandacht.',
+    link: '/2',
+    icon: 'star'
   },
   {
-    title: 'Versie 3',
-    link: '/3'
+    title: 'Geen focus',
+    caption: 'Alle handelingsperspectieven krijgen evenveel aandacht.',
+    link: '/3',
+    icon: 'view_column'
   },
 ]
 

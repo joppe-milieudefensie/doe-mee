@@ -4,7 +4,7 @@
 
         <div class="max-width">
           <div class="q-gutter-y-md q-my-md">
-            <q-img :ratio="21/9" class="bg-grey " src="~assets/video.jpg">
+            <q-img :ratio="21/9" class="bg-grey " src="~assets/video.jpg" no-transition no-spinner>
               <div>
                 <span>Video</span>
               </div>
@@ -52,7 +52,7 @@
 
           <q-btn label="Houd mij op de hoogte" color="secondary" class="full-width q-mt-md" size="20px" no-caps unelevated/>
 
-          <div class="text-center cursor-pointer q-gutter-y-lg q-py-xl">
+          <div class="text-center cursor-pointer q-gutter-y-lg q-py-xl no-link-styling">
             <h2>Wat is Operatie Klimaat? <q-icon name="arrow_forward"/></h2>
             <h2><router-link to="1"> Op welke manieren kan ik bijdragen? <q-icon name="arrow_forward"/></router-link></h2>
           </div>
@@ -62,8 +62,45 @@
       </section>
       <StappenVeranderaar/>
       <MeerManieren/>
+      <NogMeer/>
+
+      <q-page-sticky position="bottom-right" :offset="[18, 18]">
+          <q-btn icon="info" rounded color="secondary"  label="Over dit concept" @click="prompt = true" size="24px"/>
+      </q-page-sticky>
+
+      <q-dialog v-model="prompt">
+      <q-card>
+        <q-card-section>
+          <div class="text-h6">Over dit concept</div>
+        </q-card-section>
+
+        <q-card-section class="q-pt-none">
+          <p><strong>Wat maakt deze pagina anders?</strong></p>
+          <ul>
+            <li>Laagdrempelig formulier voor Operatie Klimaat: commitment om actief te worden is optioneel.</li>
+            <li>Meer informatie over wat Operatie Klimaat is, op wat voor manieren je kan bijdragen en hoe je actief kunnen worden. En gebruik maken van emotie: video in plaats van afbeelding.</li>
+            <li>Duidelijke primaire, secundaire en tertiraire acties, in plaats van gelijkwaardige aandacht voor alle handlingsperspectieven. Er ligt een focus op hoogwaardige conversies (kwaliteit van contactgegevens in plaats van kwantiteit).</li>
+            <li>Geschreven vanuit perspectief van de lezer. Bijv. 'Fair Future Generators' zegt de gemiddelde bezoeker niks, 'traineeship voor jongeren' is duidelijk.</li>
+          </ul>
+          <p><strong>Welke impact verwachten we van dit voorstel?</strong></p>
+          <ul>
+            <li>Mensen begrijpen beter wat Operatie Klimaat is, hoe ze kunnen bijdragen en actief worden.</li>
+            <li>Veel meer mensen melden zich aan voor Operatie Klimaat. Deze zullen wel gemiddeld iets minder committed zijn om echt actief te worden. Maar met een goed email straatje en laagdrempelige handelingsperspectieven kunnen we deze mensen geleidelijk toch actief krijgen.</li>
+            <li>Minder mensen gaan naar campagne en donatie pagina's.</li>
+            <li>Het totaal aantal verzamelde contactgevens blijft gelijk of gaat iets omlaag.</li>
+            <li>De gemiddelde verandermacht score per aanmelding gaat significant omhoog.</li>
+          </ul>
+        </q-card-section>
+
+        <q-card-actions align="right">
+          <q-btn flat label="OK" color="primary" v-close-popup />
+        </q-card-actions>
+      </q-card>
+    </q-dialog>
 
   </q-page>
+
+
 
 
 </template>
@@ -72,12 +109,14 @@
 import { defineComponent } from 'vue'
 import StappenVeranderaar from "components/StappenVeranderaar.vue"
 import MeerManieren from "components/MeerManieren.vue"
+import NogMeer from "components/NogMeer.vue"
 
 export default defineComponent({
   name: 'IndexPage',
-  components: {StappenVeranderaar, MeerManieren},
+  components: {StappenVeranderaar, MeerManieren, NogMeer},
   data: function(){
     return{
+      prompt: null,
       naam: null,
       email: null,
       tel: null,
@@ -97,7 +136,7 @@ export default defineComponent({
 })
 </script>
 <style lang="scss">
-a{
+.no-link-styling a{
   color: black;
   text-decoration: none;
 }
