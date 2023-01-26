@@ -57,6 +57,10 @@ const linksList = [
     title: 'Versie 2',
     link: '/2'
   },
+  {
+    title: 'Versie 3',
+    link: '/3'
+  },
 ]
 
 export default defineComponent({
