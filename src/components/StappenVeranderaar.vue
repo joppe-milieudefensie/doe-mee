@@ -1,6 +1,7 @@
 <template>
-  <section class="q-mt-lg q-py-lg bg-accent">
-        <div class="max-width row q-col-gutter-md items-stretch">
+  <section class="q-py-lg bg-accent">
+    <div class="max-width">
+      <div class="row q-col-gutter-md items-stretch">
           <div class="col-md-4 col-12 flex items-stretch">
             <q-card class="full-width cursor-pointer flex items-center">
 
@@ -33,5 +34,7 @@
           </div>
 
         </div>
+    </div>
+
       </section>
 </template>

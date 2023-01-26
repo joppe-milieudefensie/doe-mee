@@ -1,6 +1,6 @@
-@font-face{font-family:Taca;src:url(TacaPro-bold.woff) format("woff");font-weight:700;font-style:normal}
+@font-face{font-family:Taca;src:url('/TacaPro-bold.woff') format("woff");font-weight:700;font-style:normal}
 
-@font-face{font-family:Taca;src:url(TacaPro-regular.woff) format("woff");font-weight:500;font-style:normal}
+@font-face{font-family:Taca;src:url('/TacaPro-regular.woff') format("woff");font-weight:500;font-style:normal}
 
 body{
     font-family: "Lato";
@@ -9,6 +9,7 @@ body{
 .max-width{
     max-width: 800px;
     margin: auto;
+    padding:0 16px;
 }
 h1,h2,h3,h4,h5,h6, .q-toolbar__title{
     margin:0;

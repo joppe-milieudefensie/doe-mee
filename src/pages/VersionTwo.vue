@@ -2,8 +2,8 @@
     <q-page>
       <section class="">
 
-        <div class="max-width q-gutter-y-sm q-pt-xl q-px-md">
-          <div class=" q-gutter-y-md">
+        <div class="max-width">
+          <div class="q-gutter-y-md q-my-md">
             <q-img :ratio="21/9" class="bg-grey " src="~assets/video.jpg">
               <div>
                 <span>Video</span>
@@ -51,12 +51,14 @@
 
 
           <q-btn label="Houd mij op de hoogte" color="secondary" class="full-width q-mt-md" size="20px" no-caps unelevated/>
+
+          <div class="text-center cursor-pointer q-gutter-y-lg q-py-xl">
+            <h2>Wat is Operatie Klimaat? <q-icon name="arrow_forward"/></h2>
+            <h2><router-link to="1"> Op welke manieren kan ik bijdragen? <q-icon name="arrow_forward"/></router-link></h2>
+          </div>
         </div>
 
-        <div class="max-width text-center cursor-pointer q-gutter-y-lg q-py-md">
-          <h2>Wat is Operatie Klimaat? <q-icon name="arrow_forward"/></h2>
-          <h2><router-link to="1"> Op welke manieren kan ik bijdragen? <q-icon name="arrow_forward"/></router-link></h2>
-        </div>
+
       </section>
       <StappenVeranderaar/>
       <MeerManieren/>
