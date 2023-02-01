@@ -32,6 +32,7 @@
         <EssentialLink
           v-bind="{title: 'README!', icon: 'home', link: '/'}"
         />
+
         <q-item-label
           header
         >
