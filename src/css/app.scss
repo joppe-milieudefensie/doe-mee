@@ -1,39 +1,55 @@
-@font-face{font-family:Taca;src:url('/TacaPro-bold.woff') format("woff");font-weight:700;font-style:normal}
+@font-face {
+  font-family: Taca;
+  src: url("/TacaPro-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
 
-@font-face{font-family:Taca;src:url('/TacaPro-regular.woff') format("woff");font-weight:500;font-style:normal}
+@font-face {
+  font-family: Taca;
+  src: url("/TacaPro-regular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
 
-body{
-    font-family: "Lato";
-    font-size:16px;
+body {
+  font-family: "Lato";
+  font-size: 16px;
 }
-.max-width{
-    max-width: 800px;
-    margin: auto;
-    padding:0 16px;
+.max-width {
+  max-width: 800px;
+  margin: auto;
+  padding: 0 16px;
 }
-h1,h2,h3,h4,h5,h6, .q-toolbar__title{
-    margin:0;
-    line-height: 1;
-    font-weight: 700;
-    font-family: Taca;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.q-toolbar__title {
+  margin: 0;
+  line-height: 1;
+  font-weight: 700;
+  font-family: Taca;
 }
-h1{
-  font-size:3em;
+h1 {
+  font-size: 3em;
   color: $primary;
 }
 
-h2{
-  font-size: 2em
+h2 {
+  font-size: 2em;
 }
-h3{
+h3 {
   font-size: 1.5em;
 }
-.text-body1{
-  font-size:1.2em;
+.text-body1 {
+  font-size: 1.2em;
   letter-spacing: normal;
   line-height: 1.5;
 }
-.q-btn{
+.q-btn {
   font-family: Taca;
   font-weight: 500;
 }
